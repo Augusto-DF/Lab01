@@ -1,8 +1,9 @@
 #include <iostream>
+#include "volume.h"
 #define PI 3.14
 
-float vol_pyramid(float area_base, float heigth){
-	return 1/3*(area_base*heigth);
+float vol_pyramid(float base_area, float heigth){
+	return 1/3*(base_area*heigth);
 }
 
 float vol_cube(float edge){

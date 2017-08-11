@@ -1,4 +1,5 @@
 #include <iostream>
+#include "perimeter.h"
 #define PI 3.14
 
 int perim_triangle(int side1, int side2, int side3){
