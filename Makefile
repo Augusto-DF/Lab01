@@ -30,7 +30,7 @@ questao01: $(OBJ_DIR)/perimeter.o $(OBJ_DIR)/area.o $(OBJ_DIR)/volume.o $(OBJ_DI
 	@echo	"======================"
 	$(CC) $(CFLAGS) -o $(BIN_DIR)/$@ $^
 	@echo	"++++ [Executavel questao01 criado em $(BIN_DIR)] ++++"
-	@echo	"    =============================================    "
+	@echo	"  =============================================    "
 
 #Criação dos arquivos .o:
 #perimeter.o

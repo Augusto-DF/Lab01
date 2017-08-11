@@ -2,8 +2,8 @@
 #include "perimeter.h"
 #define PI 3.14
 
-int perim_triangle(int side1, int side2, int side3){
-	return side1 + side2 +side3;
+int perim_triangle(int base){
+	return base*3;
 }
 
 int perim_rectangle(int width, int heigth){
