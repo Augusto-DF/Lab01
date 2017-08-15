@@ -1,3 +1,9 @@
+/**
+ * @file	calcula.cpp
+ * @author	Mattheus Augusto Pinheiro de Oliveira
+ * @date	14/08/2017
+ */
+
 #include <iostream>
 #include "calcula.h"
 
@@ -5,6 +11,9 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+/**
+ * @brief	Função que pede os dados necessários para os calculos das figuras
+*/
 void calc(int key){
 
 	if(key==1){ // Triangulo:
@@ -53,7 +62,7 @@ void calc(int key){
 		std::cout << endl;
 	}
 
-	else if(key==5){//Piramide
+	else if(key==5){//Pirâmide
 		int pbarea_, pheigth, plarea_;
 
 		std::cout << "Digite o valor da Área da base da pirâmide: ";

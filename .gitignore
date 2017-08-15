@@ -1,6 +1,4 @@
-*.log
-build/
-doc/
-bin/
-test/
-temp-*
+doc/*
+build/*
+bin/*
+test/*
