@@ -10,6 +10,8 @@
 
 /**
  * @brief	Descricao de função que calcula o fatorial de n
+ * @param	n Chave para o calculo do fatorial
+ * @return	O fatorial do numero (Chave)
 */
 int fat(int n);
 

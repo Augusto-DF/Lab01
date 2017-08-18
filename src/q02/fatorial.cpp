@@ -8,7 +8,9 @@
 #include "fatorial.h"
 
 /**
- * @brief	Função que calcula o fatorial de n
+ * @brief	Definição de função que calcula o fatorial de n
+ * @param	n Chave para o calculo do fatorial
+ * @return	O fatorial do numero (Chave)
 */
 int fat(int n){
 	if((n==1)||(n==0)) return 1;

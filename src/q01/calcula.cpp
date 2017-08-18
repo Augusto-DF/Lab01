@@ -13,6 +13,7 @@ using std::endl;
 
 /**
  * @brief	Função que pede os dados necessários para os calculos das figuras
+ * @param	Chave referente a figura geometrica
 */
 void calc(int key){
 

@@ -18,8 +18,9 @@ using std::cin;
 using std::endl;
 
 /**
-* @brief	Assinatura da funcao que irá solicitar as entradas para o usuário
-*/
+ * @brief	Assinatura da funcao que irá solicitar as entradas para o usuário
+ * @param	Chave referente a figura geometrica
+ */
 void calc(int key);
 
 #endif

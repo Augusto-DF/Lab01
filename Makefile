@@ -15,15 +15,17 @@ TEST_DIR=./test
 #Váriavel de compilação:
 CFLAGS=-Wall -pedantic -ansi -std=c++11 -I. -I$(INC_DIR)/q01
 CFLAGS2=-Wall -pedantic -ansi -std=c++11 -I. -I$(INC_DIR)/q02
+CFLAGS3=-Wall -pedantic -ansi -std=c++11 -I.
 
 .PHONY: all clean doxy debug doc
 
 #Remove os arquivos .o:
-all: questao01 questao02# questao03
+all: questao01 questao02 questao03
 
 debug: CFLAGS += -g -O0
 debug: CFLAGS2 += -g -O0
-debug: questao01 questao02# questao03
+debug: CFLAGS3 += -g -O0
+debug: questao01 questao02 questao03
 
 #Criação do executavel: questao01
 questao01: $(OBJ_DIR)/perimeter.o $(OBJ_DIR)/area.o $(OBJ_DIR)/volume.o $(OBJ_DIR)/calcula.o $(OBJ_DIR)/main1.o
@@ -77,6 +79,20 @@ $(OBJ_DIR)/fatorial.o: $(SRC_DIR)/q02/fatorial.cpp $(INC_DIR)/q02/fatorial.h
 #main.o
 $(OBJ_DIR)/main2.o: $(SRC_DIR)/q02/main.cpp
 	$(CC) -c $(CFLAGS2) -o $@ $<
+
+
+#Criação do executavel: questao02
+questao03: $(OBJ_DIR)/main3.o
+	@echo	"======================"
+	@echo	"Carregando o alvo $@"
+	@echo	"======================"
+	$(CC) $(CFLAGS3) -o $(BIN_DIR)/$@ $^
+	@echo	"++++ [Executavel questao03 criado em $(BIN_DIR)] ++++"
+	@echo	"  =============================================    "
+
+#main.o
+$(OBJ_DIR)/main3.o: $(SRC_DIR)/q03/main.cpp
+	$(CC) -c $(CFLAGS3) -o $@ $<
 
 doxy:
 	rm -rf $(DOC_DIR)/*
